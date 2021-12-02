@@ -5,6 +5,9 @@ h1 {
 .grid-nav{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    padding: 1em;
+    background-color: lightgrey;
 }
 .dropdown-nav {
     position: relative;
@@ -16,5 +19,9 @@ h1 {
     position: absolute;
   }
 .dropbtn {width: 100%;}
-.dropdown-content a {display: block;}
+.dropdown-content a {
+  display: block;
+  padding: 1em;
+  background-color: lightgrey;
+}
 .dropdown-nav:hover .dropdown-content {display: block;}
