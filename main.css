@@ -1,3 +1,4 @@
+/* for <header> */
 img {
   display: block;
   margin-left: auto;
@@ -28,3 +29,9 @@ img {
   background-color: white;
 }
 .dropdown-nav:hover .dropdown-content {display: block;}
+
+/* for <main> grid-container */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
