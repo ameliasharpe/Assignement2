@@ -87,3 +87,13 @@
   grid-row: 3;
 }
 .item6 img {border-bottom-right-radius: 10%;}
+
+/* for <main> grid pic gallery */
+.grid-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 4%;
+  margin: 5%;
+}
+.grid-pic {height: 200px;}
+.grid-pic img {width: 100%;}
