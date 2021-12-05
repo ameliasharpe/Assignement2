@@ -45,7 +45,7 @@
 /* for <main> grid-container */
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1.2fr 1.2fr;
+  grid-template-columns: 1fr 1fr 1.1fr 1.1fr;
   width: 80%;
   margin-left: 10%;
   align-items: center;
@@ -88,7 +88,29 @@
   height: 200px;
 }
 
+/* staff */
+.item6 {
+  grid-column: 2;
+}
+.item7 {
+  grid-column: 3 / span 2;
+  width: 70%;
+  margin-left: 5%;
+}
+.item7 h1 {font-family: Playlist; font-size: 80px;}
+.item7 p {font-family: trocchi; font-size: 20px;}
 
+.item8 {align-items: baseline;}
+
+.item9 {
+  grid-column: 2 / span 2;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.item9 h2 {font-family: Playlist; font-size: 50px;}
+.item9 p {font-family: trocchi; font-size: 15px;}
+
+.toRight {text-align: right;}
 /* footer */
 footer {
   text-align: center;
