@@ -16,31 +16,12 @@
     margin-left: 15%;
     margin-bottom: 4%;
 }
-.dropdown-nav {
-    position: relative;
-    display: inline-block;
-  }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    width: 100%;
-  }
 .navbtn {
   width: 100%;
   text-decoration: none;
   color: #3e1210;
 }
-
-.dropdown-content a {
-  display: block;
-  padding: 0.8em;
-  text-decoration: none;
-  color: #3e1210;
-  background-color: white;
-}
-.dropdown-nav:hover .dropdown-content {display: block;}
-
 
 /* for <main> grid-container */
 .grid-container {
