@@ -1,0 +1,18 @@
+body {
+  text-align: center;
+  color: #3e1210;
+}
+
+h1 {font-family: alegreya;}
+
+.grid-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 90%;
+  margin-left: 5%;
+}
+.text-content {
+  background-color: orange;
+  font-family: GlacialIndifference-Regular;
+  font-size: 18px;
+}
