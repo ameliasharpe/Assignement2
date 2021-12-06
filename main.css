@@ -46,8 +46,8 @@
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1.1fr 1.1fr;
-  width: 80%;
-  margin-left: 10%;
+  width: 90%;
+  margin-left: 5%;
   align-items: center;
 }
 .grid-item {line-height: 30px;}
@@ -100,17 +100,21 @@
 .item7 h1 {font-family: Playlist; font-size: 80px;}
 .item7 p {font-family: trocchi; font-size: 20px;}
 
-.item8 {align-items: baseline;}
+.item8 {margin-top: 5%; align-self: start;}
 
 .item9 {
   grid-column: 2 / span 2;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 .item9 h2 {font-family: Playlist; font-size: 50px;}
 .item9 p {font-family: trocchi; font-size: 15px;}
 
+.toLeft {text-align: left;}
 .toRight {text-align: right;}
+
+.item10 {align-self: end;}
+
 /* footer */
 footer {
   text-align: center;
