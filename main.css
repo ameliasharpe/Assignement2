@@ -16,37 +16,19 @@
     margin-left: 15%;
     margin-bottom: 4%;
 }
-.dropdown-nav {
-    position: relative;
-    display: inline-block;
-  }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    width: 100%;
-  }
 .navbtn {
   width: 100%;
   text-decoration: none;
   color: #3e1210;
 }
 
-.dropdown-content a {
-  display: block;
-  padding: 0.8em;
-  text-decoration: none;
-  color: #3e1210;
-  background-color: white;
-}
-.dropdown-nav:hover .dropdown-content {display: block;}
-
 /* for <main> grid-container */
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1.2fr 1.2fr;
-  width: 80%;
-  margin-left: 10%;
+  grid-template-columns: 1fr 1fr 1.1fr 1.1fr;
+  width: 90%;
+  margin-left: 5%;
   align-items: center;
 }
 .grid-item {line-height: 30px;}
@@ -66,7 +48,6 @@
 
 .item3 {
   grid-column: 1 / span 2;
-  grid-row: 2 / span 2;
   margin: 5%;
 }
 .item3 h1 {font-family: Playlist; font-size: 80px;}
@@ -74,34 +55,52 @@
 
 .item4 {
   grid-column: 3 / span 2;
-  grid-row: 2;
 }
 .item4 img {border-top-right-radius: 10%;}
 
 .item5 {
-  grid-column: 3;
-  grid-row: 3;
+  grid-column: 1 / span 4;
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
-.item6 {
-  grid-column: 4;
-  grid-row: 3;
+.item5 img {
+  object-fit: cover;
+  object-position: center;
+  height: 200px;
 }
-.item6 img {border-bottom-right-radius: 10%;}
 
-/* for <main> grid pic gallery */
-.grid-gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 4%;
-  margin: 5%;
+/* staff */
+.item6 {
+  grid-column: 2;
 }
-.grid-pic {height: 200px;}
-.grid-pic img {width: 100%;}
+.item7 {
+  grid-column: 3 / span 2;
+  width: 70%;
+  margin-left: 5%;
+}
+.item7 h1 {font-family: Playlist; font-size: 80px;}
+.item7 p {font-family: trocchi; font-size: 20px;}
+
+.item8 {margin-top: 5%; align-self: start;}
+
+.item9 {
+  grid-column: 2 / span 2;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.item9 h2 {font-family: Playlist; font-size: 50px;}
+.item9 p {font-family: trocchi; font-size: 15px;}
+
+.toLeft {text-align: left;}
+.toRight {text-align: right;}
+
+.item10 {align-self: end;}
 
 /* footer */
 footer {
   text-align: center;
   font-family: GlacialIndifference-Regular;
+  margin-top: 5%;
 }
 footer img {
   display: block;
