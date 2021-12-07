@@ -3,27 +3,21 @@ body {
   color: #3e1210;
 }
 
-h1 {font-family: alegreya;}
+h1 {font-family: GlacialIndifference-Regular; font-size: 30px; text-align: center;}
 
 .dish-name {
+  text-align: center;
   font-family: GlacialIndifference-Regular;
   font-size: 24px;
 }
 .dish-price {
+  text-align: center;
   font-family: GlacialIndifference-Regular;
   font-size: 18px;
 }
 
-.grid-menu {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 5%;
-  width: 80%;
-  margin-left: 10%;
-  margin-bottom: 30%;
-}
-
-.menu-item img {
+.menu img {
+  text-align: center;
   object-fit: cover;
   object-position: center;
   width: 100%;
