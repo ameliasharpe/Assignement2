@@ -2,32 +2,36 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hours</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="hour-location.css">
   </head>
   <body>
     <header>
-        <!-- logo -->
-        <img id="logo" src="images/logo.png" alt="logo">
-
-        <!-- navigator -->
-        <nav class="grid-nav">
-          <!-- home page -->
+      <div class="header">
+        <img id="logo" class="col-12" src="images/logo.png" alt="logo">
+      </div>
+      <!-- nav -->
+      <div class="row">
+        <div class="col-3 navBar">
           <a class="navbtn" href="index.html">HOME</a>
-          <!-- menu -->
+        </div>
+        <div class="col-3 navBar">
           <a class="navbtn" href="menu.html">OUR MENU</a>
-          <!-- hours -->
+        </div>
+        <div class="col-3 navBar">
           <a class="navbtn" href="hours.html">BUSINESS HOURS</a>
-          <!-- order now -->
+        </div>
+        <div class="col-3 navBar">
           <a class="navbtn" href="orderonline.html">ORDER NOW</a>
-        </nav>
-      </header>
-  </body>
+        </div>
+    </header>
+
     <h1>- Our Business Hour -</h1>
     <main>
-      <div class="grid-two">
-        <div class="text-content">
+      <div class="row">
+        <div class="col-6 text-content">
           <p id="openClose">We Are Open!</p>
           <p>Sunday - 12pm to 7pm</p>
           <p>Monday - 12pm to 9pm</p>
@@ -38,21 +42,23 @@
           <p>Saturday - 12pm to 9pm</p>
           <p>(some sort of a table)</p>
         </div>
-        <div class="img-content">
+        <div class="col-6 img-content">
           <img src="images/chairss.jpg" alt="chairs">
         </div>
       </div>
     </main>
+  </body>
+
   <footer>
-    <!-- logo -->
-    <img src="images/logo.png" alt="logo">
-    <!-- address -->
-    <div>
-      89 Hope Street<br>
-      Ottawa, Ontario<br>
-      (460)123-8734<br>
-      yumyum.foodtruck@info.com
+    <div class="footer">
+      <img src="images/logo.png" alt="logo">
+      <p>89 Hope Street<br>
+        Ottawa, Ontario<br>
+        (460)123-8734<br>
+        yumyum.foodtruck@info.com
+      </p>
     </div>
   </footer>
+
   <script type="text/javascript" src="date.js"></script>
 </html>
