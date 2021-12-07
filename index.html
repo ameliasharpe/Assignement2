@@ -9,22 +9,31 @@
 
   <body>
     <header>
+      <!-- logo -->
       <div class="header">
         <img id="logo" class="col-12" src="images/logo.png" alt="logo">
       </div>
+
       <!-- nav -->
       <div class="row">
-        <div class="col-3 navBar">
+        <div class="col-2 navBar">
           <a class="navbtn" href="index.html">HOME</a>
         </div>
         <div class="col-3 navBar">
           <a class="navbtn" href="menu.html">OUR MENU</a>
         </div>
-        <div class="col-3 navBar">
+        <div class="col-2 navBar">
           <a class="navbtn" href="hours.html">BUSINESS HOURS</a>
         </div>
         <div class="col-3 navBar">
           <a class="navbtn" href="orderonline.html">ORDER NOW</a>
+        </div>
+        <div class="col-2">
+          <!-- theme -->
+          <label class="switch">
+            <input type="checkbox" onclick="nightMode()">
+            <span class="slider round"></span>
+          </label>
         </div>
     </header>
 
@@ -100,4 +109,6 @@
       </p>
     </div>
   </footer>
+
+  <script type="text/javascript" src="mode.js"></script>
 </html>

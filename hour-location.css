@@ -5,11 +5,15 @@ body {
 
 h1 {font-family: GlacialIndifference-Regular; font-size: 30px;}
 
-#openClose {font-size: 20px; background-color: white;}
+#openClose {
+  font-size: 20px;
+  padding:5px;
+  background-color: white;
+  color: orange;}
 
 .text-content {
   background-color: orange;
-  height: 400px;
+  height: 410px;
 }
 .text-content p{
   font-family: GlacialIndifference-Regular;
@@ -19,5 +23,5 @@ h1 {font-family: GlacialIndifference-Regular; font-size: 30px;}
 .img-content img{
   object-fit: cover;
   object-position: center;
-  height: 400px;
+  height: 410px;
 }
