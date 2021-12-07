@@ -1,4 +1,5 @@
-function nightMode() {
-  var element = document.body;
-  element.classList.toggle("night-mode");
-  }
+function changeMode(){
+  let btn = document.querySelector('#checkbox')
+  let body = document.body
+  btn.checked ? body.classList.add("darkmode") : body.classList.remove("darkmode")
+}
