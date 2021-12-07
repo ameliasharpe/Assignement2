@@ -2,92 +2,102 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Food Truck</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
     <link rel="stylesheet" href="main.css">
   </head>
+
   <body>
     <header>
-        <!-- logo -->
-        <img id="logo" src="images/logo.png" alt="logo">
-
-        <!-- navigator -->
-        <nav class="grid-nav">
-          <!-- home page -->
+      <div class="header">
+        <img id="logo" class="col-12" src="images/logo.png" alt="logo">
+      </div>
+      <!-- nav -->
+      <div class="row">
+        <div class="col-3 navBar">
           <a class="navbtn" href="index.html">HOME</a>
-          <!-- menu -->
+        </div>
+        <div class="col-3 navBar">
           <a class="navbtn" href="menu.html">OUR MENU</a>
-          <!-- hours -->
+        </div>
+        <div class="col-3 navBar">
           <a class="navbtn" href="hours.html">BUSINESS HOURS</a>
-          <!-- order now -->
+        </div>
+        <div class="col-3 navBar">
           <a class="navbtn" href="orderonline.html">ORDER NOW</a>
-        </nav>
-      </header>
+        </div>
+    </header>
+
     <main>
-      <div class="grid-container">
-        <!-- pic: yellow truck pic -->
-        <div class="grid-item item1">
+      <!-- let eat good food -->
+      <div class="row">
+        <div class="col-5">
           <img src="images/yellow_truck.png" alt="yellow truck">
         </div>
-        <!-- text: let eat good food -->
-        <div class="grid-item item2">
-          <h2>Let's Eat Good Food!</h2>
-          <p>Welcome To YumYum Food Truch where you can eat good food and feel good. Cuisnes from all over the world that you love in one plate. Treat yourself and enjoy!</p>
+        <div class="col-7 verticalCenter">
+          <h2 class="fAlegreya">Let's Eat Good Food!</h2>
+          <p class="fGlacial">Welcome To YumYum Food Truch where you can eat good food and feel good. Cuisnes from all over the world that you love in one plate. Treat yourself and enjoy!</p>
         </div>
-        <!-- our story -->
-        <div class="grid-item item3">
+      </div>
+      <!-- our story -->
+      <div class="row">
+        <div class="col-5 verticalCenter">
           <h1>Our Story</h1>
           <p>Three Best friends with passion and love for food who wants to share their talent for the rest of the World.
              Inspire by the delicate suisions and yummy desserts across the world all combined in one Food Truck. So what are you waiting for?
              Eat good food and feel good, at Yum-Yum Food Truck!</p>
         </div>
-        <!-- collage -->
-        <div class="grid-item item4">
+        <div class="col-7">
           <img src="images/landing collage.png" alt="food collage">
         </div>
-        <!-- banner -->
-        <div class="grid-item item5">
-          <img src="images/cooking.jpg" alt="cooking">
+      </div>
+      <!-- banner -->
+      <div class="row">
+        <div class="col-12">
+          <img id="banner" src="images/cooking.jpg" alt="cooking">
         </div>
+      </div>
+      <!-- chef -->
+      <div class="row chef">
+        <div class="col-2"></div>
 
-        <!-- main chef -->
-        <div class="grid-item item6">
+        <div class="col-3">
           <img src="images/Staff03.jpg" alt="chef">
         </div>
-        <div class="grid-item item7">
+        <div class="col-7">
           <h1>Our Staff</h1>
           <p>James Scott - Our Chef</p>
           <p>James has been a passionate chef for more than 5 years and he loves to share his talent through making food for his customers.</p>
         </div>
-
-        <!-- other chef -->
-        <div class="grid-item item8">
+      </div>
+      <div class="row chef">
+        <div class="col-3">
           <img src="images/Staff01.jpg" alt="Sous-chef">
         </div>
-        <div class="grid-item item9">
-          <h2 class="toLeft">Emily Crug</h2>
-          <p class="toLeft">Our Sous-Chef</p>
-          <p class="toLeft">Emily is our amazing sous-chef and has been working in the food industry for almost 6 yeats! She loves food and her passion is her driving force to share her talent to other people throught food.</p>
+        <div class="col-6">
+          <h2>Emily Crug</h2>
+          <p>Our Sous-Chef</p>
+          <p>Emily is our amazing sous-chef and has been working in the food industry for almost 6 yeats! She loves food and her passion is her driving force to share her talent to other people throught food.</p>
 
           <h2 class="toRight">Michael Jones</h2>
           <p class="toRight">Our Pâtisserie chef</p>
           <p class="toRight">Michael is our very talented pâtisserie chef who loves creating and making new yummy desserts! He has been a pâtisserie chef for 7 years and passionate for his craft. He loves sweets and loves to share his passion through making sweets and desserts.</p>
         </div>
-        <div class="grid-item item10">
-          <img src="images/Staff02.jpg" alt="Pâtisserie-chef">
+        <div class="col-3">
+          <img class="toEnd" src="images/Staff02.jpg" alt="Pâtisserie-chef">
         </div>
       </div>
-
     </main>
   </body>
+
   <footer>
-    <!-- logo -->
-    <img src="images/logo.png" alt="logo">
-    <!-- address -->
-    <div>
-      89 Hope Street<br>
-      Ottawa, Ontario<br>
-      (460)123-8734<br>
-      yumyum.foodtruck@info.com
+    <div class="footer">
+      <img src="images/logo.png" alt="logo">
+      <p>89 Hope Street<br>
+        Ottawa, Ontario<br>
+        (460)123-8734<br>
+        yumyum.foodtruck@info.com
+      </p>
     </div>
   </footer>
 </html>
