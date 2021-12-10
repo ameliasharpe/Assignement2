@@ -1,4 +1,5 @@
 * {box-sizing: border-box;}
+
 img {width: 100%;}
 
 .header {display: grid;}
@@ -73,4 +74,41 @@ h2 {font-family: Playlist; font-size: 50px;}
   .verticalCenter {margin-top: 5%;}
   .toRight {text-align: right;}
   .toEnd {margin-top: 60%;}
+}
+
+
+/* toggle switch */
+body {transition: background-color 600ms;}
+
+.darkmode {background: #333333; color: white;}
+.darkmode img {filter: brightness(.8) contrast(1.2);}
+.darkmode a {color: white;}
+
+input[type=checkbox]{visibility: hidden;}
+
+.switch {
+  float:right;
+  width: 60px;
+  height: 14px;
+  background: gray;
+  position: relative;
+  border-radius: 3px;
+}
+
+label {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    transition: all .6s ease;
+    cursor: pointer;
+    position: absolute;
+    top: -5px;
+    left: -3px;
+    background: orange;
+}
+
+input[type=checkbox]:checked + label {
+    left: 40px;
+    background: #f7f7f7;
 }
