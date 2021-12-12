@@ -1,0 +1,58 @@
+fieldset{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+}
+
+h1, h2{
+  text-align: center;
+}
+
+table.comicGreen {
+  font-family: "Sans MS", cursive, sans-serif;
+  border: 2px solid #F1EC32;
+  background-color: #EEEEEE;
+  width: 80%;
+  text-align: center;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+table.comicGreen td, table.comicGreen th {
+  border: 1px solid #F1EC32;
+  padding: 3px 2px;
+}
+table.comicGreen tbody td {
+  font-size: 19px;
+  /*font-weight: bold;*/
+  color: #000000;
+}
+
+table.comicGreen thead {
+  background: #F1EC32;
+  border-bottom: 1px solid #444444;
+}
+table.comicGreen thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #000000;
+  text-align: left;
+  border-left: 2px solid #D0E4F5;
+}
+table.comicGreen thead th:first-child {
+  border-left: none;
+}
+
+table.comicGreen tfoot td {
+  font-size: 21px;
+}
+
+.btn{
+  padding: 15px 32px;
+  display: inline-block;
+  margin: 4px 2px;
+  font-size: 14px;
+  cursor: pointer;
+
+}
