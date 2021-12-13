@@ -6,6 +6,17 @@
   font-family: trocchi;
 }
 
+.myButton{
+  font-size: 20px;
+  background-color: orange;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+}
+.myButton:active {
+  transform: translateY(4px);
+}
+
 table {
   width: 100%;
   padding-bottom: 2%;

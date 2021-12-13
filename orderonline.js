@@ -20,18 +20,26 @@ function validateOrder(e){
       valid = false;
     }
 
+    if(valid){alert("Successfully submitted")};
+
     return valid;
 };
 
 
 //form element events
-//remove warning if fName has input
+//remove warning if fName has input; set cookie for name
 document.querySelector('#fName').addEventListener("blur", function(){
-    if(this.value !== ""){fNameError.innerHTML = "";}
+    if(this.value !== ""){
+      fNameError.innerHTML = "";
+      setCookie("Name", this.value, 365);
+    }
 });
-//remove warning if mobile has input
+//remove warning if phone number has input; set cookie for mobile
 document.querySelector('#telephone').addEventListener("blur", function(){
-    if(this.value !== ""){telError.innerHTML = "";}
+    if(this.value !== ""){
+      telError.innerHTML = "";
+      setCookie("Phone", this.value, 365);
+    }
 });
 //remove warning if date is selected
 document.querySelector('#pickupDate').addEventListener("blur", function(){
@@ -43,7 +51,7 @@ document.order.addEventListener("submit", validateOrder);
 
 
 
-//limit date to today
+//limit earliest date to today
 var today = new Date();
 var day = today.getDate();
 var month = today.getMonth()+1;
@@ -78,3 +86,14 @@ function updateTotal(){
   };
   document.getElementById('totalPrice').value = total.toFixed(2);
 };
+
+
+//cookie for returned user
+function setUser(){
+  let name = getCookie("Name");
+  let phone = getCookie("Phone");
+  document.getElementById('fName').value = name;
+  document.getElementById('telephone').value = phone;
+};
+
+setUser();
