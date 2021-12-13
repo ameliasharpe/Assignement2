@@ -1,0 +1,33 @@
+.alert {color: red; font-size: 12px;}
+
+
+.formLabel {
+  display: contents;
+  font-family: trocchi;
+}
+
+table {
+  width: 100%;
+  padding-bottom: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: trocchi;
+}
+thead {font-size: 24px;}
+tbody {font-size: 16px;}
+td {width: 25%; padding: 3px 2px;}
+
+input {height: 30px;}
+
+input[type=number], .subtotal, #totalPrice {
+  text-align: center;
+  font-size: 19px;
+}
+
+legend {
+  font-family: Playlist;
+  font-size: 50px;
+}
+
+input{width: 90%;font-family: trocchi;}
