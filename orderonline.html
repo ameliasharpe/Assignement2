@@ -6,10 +6,8 @@
     <title>Online Order</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="orderonline.css">
-    <script type="orderonline.js" async>
-
-    </script>
   </head>
+
   <body>
     <header>
       <!-- logo -->
@@ -39,132 +37,138 @@
           </div>
         </div>
     </header>
-    <fieldset>
-        <form="orderForm"   onsubmit="return validate()">
-          <h1>ORDER FORM</h1>
-          <p>
-            <label>Date:</label>
-              <input type="date" name="date" id="date">
-          </p>
 
-            <p>
-              <h2>Choose your food</h2>
-              <table class="comicGreen">
-                <thead>
-                  <tr>
-                    <th>Food Item</th>
-                    <th>Price(CAD$)</th>
-                    <th>Quantity</th>
-                    <th>Subtotal(CAD$)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Sweet and Spicy Chicken</td>
-                    <td>10.99</td>
-                    <td><input type="number" value="0" min="0" max="999" class="item"/></td>
-                    <td><input type="number" id="value" name="value" readonly="readonly"></td>
-                  </tr>
-                  <tr>
-                    <td>Burger + Fries</td>
-                    <td>8.99</td>
-                    <td><input type="number" value="0" min="0" max="999" class="item"/></td>
-                    <td><input type="number" id="value" name="value" readonly="readonly"></td>
-                  </tr>
-                  <tr>
-                    <td>Sushi</td>
-                    <td>9.99</td>
-                    <td><input type="number" value="0" min="0" max="999" class="item"/></td>
-                    <td><input type="number" id="value" name="value" readonly="readonly"></td>
-                  </tr>
-                  <tr>
-                    <td>Takoyaki</td>
-                    <td>7.00</td>
-                    <td><input type="number" value="0" min="0" max="999" class="item"/></td>
-                    <td><input type="number" id="value" name="value" readonly="readonly"></td>
-                  </tr>
-                  <tr>
-                    <td>Aglio Olio Pasta</td>
-                    <td>9.50</td>
-                    <td><input type="number" value="0" min="0" max="999" class="item"/></td>
-                    <td><input type="number" id="value" name="value" readonly="readonly"></td>
-                  </tr>
-                  <tr>
-                    <td>Tonkotsu Chicken Cutlet</td>
-                    <td>10.50</td>
-                    <td><input type="number" value="0" min="0" max="999" class="item"/></td>
-                    <td><input type="number" id="value" name="value" readonly="readonly"></td>
-                  </tr>
-                  <tr>
-                    <td>Strawberry Cheesecake</td>
-                    <td>4.00</td>
-                    <td><input type="number" value="0" min="0" max="999" class="item"/></td>
-                    <td><input type="number" id="value" name="value" readonly="readonly"></td>
-                  </tr>
-                  <tr>
-                    <td>Churros</td>
-                    <td>4.00</td>
-                    <td><input type="number" value="0" min="0" max="999" class="item"/></td>
-                    <td><input type="number" id="value" name="value" readonly="readonly"></td>
-                  </tr>
-                  <tr>
-                    <td>Matcha Toast Ice Cream</td>
-                    <td>5.00</td>
-                    <td><input type="number" value="0" min="0" max="999" class="item"/></td>
-                    <td><input type="number" id="value" name="value" readonly="readonly"></td>
-                  </tr>
-                  <tr>
-                    <td>Mango Ice Cream</td>
-                    <td>5.00</td>
-                    <td><input type="number" value="0" min="0" max="999" class="item"/></td>
-                    <td><input type="number" id="value" name="value" readonly="readonly"></td>
-                  </tr>
-                  <tr>
-                    <td>Ice Cream Pudding</td>
-                    <td>5.50</td>
-                    <td><input type="number" value="0" min="0" max="999" class="item"/></td>
-                    <td><input type="number" id="value" name="value" readonly="readonly"></td>
-                  </tr>
-                  <tr>
-                    <td>Creme Brulee</td>
-                    <td>4.00</td>
-                    <td><input type="number" value="0" min="0" max="999" class="item" /></td>
-                    <td><input type="number" id="value" name="value" readonly="readonly"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </p>
-            <p>
-              <h3>YOUR TOTAL (CAD$):</h3>
-                <input type="number" id="total" name="value" readonly="readonly">
-            </p>
+    <main>
+      <!-- order form -->
+      <br>
+      <form id="orderForm" name="order" class="row">
+        <!-- order information -->
+        <fieldset class="col-9">
+          <legend>Choose your food</legend>
+          <table>
+            <thead>
+              <tr>
+                <th>Food Item</th>
+                <th>Price(CAD$)</th>
+                <th>Quantity</th>
+                <th>Subtotal(CAD$)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sweet and Spicy Chicken</td>
+                <td>10.99</td>
+                <td><input type="number" value="0" min="0" max="99" class="item" onchange="update(this.value,10.99,'subtotal1')"></td>
+                <td><input type="text" id="subtotal1" class="subtotal" readonly="readonly"></td>
+              </tr>
+              <tr>
+                <td>Burger + Fries</td>
+                <td>8.99</td>
+                <td><input type="number" value="0" min="0" max="99" class="item" onchange="update(this.value,8.99,'subtotal2')"></td>
+                <td><input type="text" id="subtotal2" class="subtotal" readonly="readonly"></td>
+              </tr>
+              <tr>
+                <td>Sushi</td>
+                <td>9.99</td>
+                <td><input type="number" value="0" min="0" max="99" class="item" onchange="update(this.value,9.99,'subtotal3')"></td>
+                <td><input type="text" id="subtotal3" class="subtotal" readonly="readonly"></td>
+              </tr>
+              <tr>
+                <td>Takoyaki</td>
+                <td>7.00</td>
+                <td><input type="number" value="0" min="0" max="99" class="item" onchange="update(this.value,7.00,'subtotal4')"></td>
+                <td><input type="text" id="subtotal4" class="subtotal" readonly="readonly"></td>
+              </tr>
+              <tr>
+                <td>Aglio Olio Pasta</td>
+                <td>9.50</td>
+                <td><input type="number" value="0" min="0" max="99" class="item" onchange="update(this.value,9.50,'subtotal5')"></td>
+                <td><input type="text" id="subtotal5" class="subtotal" readonly="readonly"></td>
+              </tr>
+              <tr>
+                <td>Tonkotsu Chicken Cutlet</td>
+                <td>10.50</td>
+                <td><input type="number" value="0" min="0" max="99" class="item" onchange="update(this.value,10.50,'subtotal6')"></td>
+                <td><input type="text" id="subtotal6" class="subtotal" readonly="readonly"></td>
+              </tr>
+              <tr>
+                <td>Strawberry Cheesecake</td>
+                <td>4.00</td>
+                <td><input type="number" value="0" min="0" max="99" class="item" onchange="update(this.value,4.00,'subtotal7')"></td>
+                <td><input type="text" id="subtotal7" class="subtotal" readonly="readonly"></td>
+              </tr>
+              <tr>
+                <td>Churros</td>
+                <td>4.00</td>
+                <td><input type="number" value="0" min="0" max="99" class="item" onchange="update(this.value,4.00,'subtotal8')"></td>
+                <td><input type="text" id="subtotal8" class="subtotal" readonly="readonly"></td>
+              </tr>
+              <tr>
+                <td>Matcha Toast Ice Cream</td>
+                <td>5.00</td>
+                <td><input type="number" value="0" min="0" max="99" class="item" onchange="update(this.value,5.00,'subtotal9')"></td>
+                <td><input type="text" id="subtotal9" class="subtotal" readonly="readonly"></td>
+              </tr>
+              <tr>
+                <td>Mango Ice Cream</td>
+                <td>5.00</td>
+                <td><input type="number" value="0" min="0" max="99" class="item" onchange="update(this.value,5.00,'subtotal10')"></td>
+                <td><input type="text" id="subtotal10" name="subtotal" readonly="readonly"></td>
+              </tr>
+              <tr>
+                <td>Ice Cream Pudding</td>
+                <td>5.50</td>
+                <td><input type="number" value="0" min="0" max="99" class="item" onchange="update(this.value,5.50,'subtotal11')"></td>
+                <td><input type="text" id="subtotal11" class="subtotal" readonly="readonly"></td>
+              </tr>
+              <tr>
+                <td>Creme Brulee</td>
+                <td>4.00</td>
+                <td><input type="number" value="0" min="0" max="99" class="item" onchange="update(this.value,4.00,'subtotal12')"></td>
+                <td><input type="text" id="subtotal12" class="subtotal" readonly="readonly"></td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
 
-            <p>
-              <h3>Customer Information</h3>
-              <label>First Name:</label>
-                <input type="text" name="firstName" id="firstName" size="20">
+        <!-- pickup information -->
+        <fieldset class="col-3 pickup">
+          <legend>Pickup:</legend>
+          <div class="row">
+            <!-- name -->
+            <div class="col-12">
+              <label class="formLabel" for="fName">Name</label><br>
+              <input type="text" id="fName" name="fName" placeholder="First Last"><br>
+              <span class="alert" id="fNameError"></span><br>
+            </div>
+            <!-- mobile -->
+            <div class="col-12">
+              <label class="formLabel" for="telephone">Mobile</label><br>
+              <input type="tel" id="telephone" name="telephone" placeholder="123-456-7890" minlength="10" maxlength="10"><br>
+              <span class="alert" id="telError"></span><br>
+            </div>
+            <!-- date -->
+            <div class="col-12">
+              <label class="formLabel" for="pickupDate">Date:</label><br>
+              <input type="date" id="pickupDate" name="pickupDate" min=""><br>
+              <span class="alert" id="dateError"></span><br>
+            </div>
 
-              <label>Last Name:</label>
-                <input type="text" name="lastName" id="lastName" size="20">
-            </p>
-            <p>
-              <label>Email:</label>
-                <input type="email" name="email" id="email">
-            </p>
-            <p>
-              <label>Phone:</label>
-                <input type="text" name="phone" id="phone"
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                <small>Format: 123-456-7890</small>
-            </p>
-            <p>
-              <div class="btn">
-                <input type="submit">
-              <div>
-            </p>
+            <!-- total price display -->
+            <div class="col-12">
+              <label class="formLabel" for="">Total</label><br>
+              <input type="text" id="totalPrice" readonly="readonly" value="0"><br><br>
+            </div>
 
-        </form>
-      </fieldset>
+            <!-- submit -->
+            <div class="col-12">
+              <input class='myButton' type="submit" value="Submit">
+            </div>
+          </div>
+        </fieldset>
+
+      </form>
+    </main>
   </body>
 
   <footer>
@@ -179,4 +183,6 @@
   </footer>
 
   <script type="text/javascript" src="mode.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="orderonline.js" defer></script>
 </html>

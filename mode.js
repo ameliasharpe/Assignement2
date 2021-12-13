@@ -1,14 +1,4 @@
 
-function setThemeMode(){
-  let body = document.body;
-  let x = getCookie("themeCookie");
-  if(x == "dark"){
-    body.classList.add("darkmode");
-  }else{
-    body.classList.remove("darkmode");
-  };
-};
-
 function setCookie(cname, cvalue, exdays) {
   const d = new Date();
   d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
@@ -31,6 +21,17 @@ function getCookie(cname) {
   return "";
 }
 
+
+function setThemeMode(){
+  let body = document.body;
+  let x = getCookie("themeCookie");
+  if(x == "dark"){
+    body.classList.add("darkmode");
+  }else{
+    body.classList.remove("darkmode");
+  };
+};
+
 const btn = document.querySelector("#checkbox");
 
 btn.addEventListener("click", function() {
@@ -41,7 +42,6 @@ btn.addEventListener("click", function() {
   }
   // save cookie
   setCookie("themeCookie", theme, 1);
-
 });
 
 setThemeMode();

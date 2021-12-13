@@ -1,58 +1,44 @@
-fieldset{
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 25px;
+.alert {color: red; font-size: 12px;}
+
+
+.formLabel {
+  display: contents;
+  font-family: trocchi;
 }
 
-h1, h2{
-  text-align: center;
+.myButton{
+  font-size: 20px;
+  background-color: orange;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+}
+.myButton:active {
+  transform: translateY(4px);
 }
 
-table.comicGreen {
-  font-family: "Sans MS", cursive, sans-serif;
-  border: 2px solid #F1EC32;
-  background-color: #EEEEEE;
-  width: 80%;
-  text-align: center;
-  border-collapse: collapse;
+table {
+  width: 100%;
+  padding-bottom: 2%;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  font-family: trocchi;
 }
-table.comicGreen td, table.comicGreen th {
-  border: 1px solid #F1EC32;
-  padding: 3px 2px;
-}
-table.comicGreen tbody td {
+thead {font-size: 24px;}
+tbody {font-size: 16px;}
+td {width: 25%; padding: 3px 2px;}
+
+input {height: 30px;}
+
+input[type=number], .subtotal, #totalPrice {
+  text-align: center;
   font-size: 19px;
-  /*font-weight: bold;*/
-  color: #000000;
 }
 
-table.comicGreen thead {
-  background: #F1EC32;
-  border-bottom: 1px solid #444444;
-}
-table.comicGreen thead th {
-  font-size: 15px;
-  font-weight: bold;
-  color: #000000;
-  text-align: left;
-  border-left: 2px solid #D0E4F5;
-}
-table.comicGreen thead th:first-child {
-  border-left: none;
+legend {
+  font-family: Playlist;
+  font-size: 50px;
 }
 
-table.comicGreen tfoot td {
-  font-size: 21px;
-}
-
-.btn{
-  padding: 15px 32px;
-  display: inline-block;
-  margin: 4px 2px;
-  font-size: 14px;
-  cursor: pointer;
-
-}
+input{width: 90%;font-family: trocchi;}
